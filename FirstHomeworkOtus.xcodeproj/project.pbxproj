@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A87AFDB29B618B2005CE433 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */; };
 		2AE5934129B4D135009909AB /* FirstHomeworkOtusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */; };
-		2AE5934329B4D135009909AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934229B4D135009909AB /* ContentView.swift */; };
+		2AE5934329B4D135009909AB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934229B4D135009909AB /* MainTabView.swift */; };
 		2AE5934529B4D137009909AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5934429B4D137009909AB /* Assets.xcassets */; };
 		2AE5934829B4D137009909AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5934729B4D137009909AB /* Preview Assets.xcassets */; };
+		2AE5934F29B4ECAD009909AB /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934E29B4ECAD009909AB /* SecondScreen.swift */; };
+		2AE5935729B5BCBD009909AB /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5935629B5BCBD009909AB /* FirstScreen.swift */; };
+		2AE5935A29B61199009909AB /* MusicScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5935929B61199009909AB /* MusicScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		2AE5933D29B4D135009909AB /* FirstHomeworkOtus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstHomeworkOtus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHomeworkOtusApp.swift; sourceTree = "<group>"; };
-		2AE5934229B4D135009909AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AE5934229B4D135009909AB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		2AE5934429B4D137009909AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE5934729B4D137009909AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AE5934E29B4ECAD009909AB /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		2AE5935629B5BCBD009909AB /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		2AE5935929B61199009909AB /* MusicScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A87AFD929B61892005CE433 /* 3_ThirdScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */,
+			);
+			path = 3_ThirdScreen;
+			sourceTree = "<group>";
+		};
 		2AE5933429B4D135009909AB = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */,
-				2AE5934229B4D135009909AB /* ContentView.swift */,
+				2AE5934229B4D135009909AB /* MainTabView.swift */,
+				2AE5935B29B61627009909AB /* 1_FirstScreen */,
+				2AE5935829B61156009909AB /* 2_SecondScreen */,
+				2A87AFD929B61892005CE433 /* 3_ThirdScreen */,
 				2AE5934429B4D137009909AB /* Assets.xcassets */,
 				2AE5934629B4D137009909AB /* Preview Content */,
 			);
@@ -65,6 +84,23 @@
 				2AE5934729B4D137009909AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AE5935829B61156009909AB /* 2_SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2AE5934E29B4ECAD009909AB /* SecondScreen.swift */,
+				2AE5935929B61199009909AB /* MusicScreen.swift */,
+			);
+			path = 2_SecondScreen;
+			sourceTree = "<group>";
+		};
+		2AE5935B29B61627009909AB /* 1_FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2AE5935629B5BCBD009909AB /* FirstScreen.swift */,
+			);
+			path = 1_FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE5934329B4D135009909AB /* ContentView.swift in Sources */,
+				2AE5934F29B4ECAD009909AB /* SecondScreen.swift in Sources */,
+				2A87AFDB29B618B2005CE433 /* ThirdScreen.swift in Sources */,
+				2AE5934329B4D135009909AB /* MainTabView.swift in Sources */,
 				2AE5934129B4D135009909AB /* FirstHomeworkOtusApp.swift in Sources */,
+				2AE5935A29B61199009909AB /* MusicScreen.swift in Sources */,
+				2AE5935729B5BCBD009909AB /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

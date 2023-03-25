@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainTabView: View {
+struct ContentView: View {
     
     @State var tab: Tab = .first
     
@@ -25,17 +25,29 @@ struct MainTabView: View {
                     Text("Второй") }
                             .tag(Tab.second)
                 
-            ThirdScreen()
+            ProfileScreen()
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text ("Третий") }
                             .tag(Tab.third)
+            NewsScreen()
+                .tabItem {
+                    Image(systemName: "4.square.fill")
+                    Text ("Четвертый") }
+                            .tag(Tab.fourth)
+            DashboardScreen()
+                .tabItem {
+                    Image(systemName: "5.square.fill")
+                    Text ("Пятый") }
+                            .tag(Tab.fifth)
+                
+            
         }
     }
     
     struct MainTabView_Previews: PreviewProvider {
         static var previews: some View {
-            MainTabView()
+            ContentView()
         }
     }
 }
@@ -44,4 +56,6 @@ enum Tab {
     case first
     case second
     case third
+    case fourth
+    case fifth
 }

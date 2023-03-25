@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A87AFDB29B618B2005CE433 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */; };
+		2A227A1029C349E60073D36B /* generate.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2A227A0F29C349E60073D36B /* generate.sh */; };
+		2A227A1229C34BB40073D36B /* newsapi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2A227A1129C34BB40073D36B /* newsapi.yml */; };
+		2A227A1529C35C280073D36B /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A227A1429C35C280073D36B /* NewsModel.swift */; };
+		2A87AFDB29B618B2005CE433 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87AFDA29B618B2005CE433 /* ProfileScreen.swift */; };
+		2AC4605E29C38BB500112DFA /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC4605D29C38BB500112DFA /* Networking */; };
+		2AC4606429C8754400112DFA /* UIDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC4606329C8754400112DFA /* UIDesignSystem */; };
+		2AC4606729C875F100112DFA /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC4606629C875F100112DFA /* DashboardScreen.swift */; };
 		2AE5934129B4D135009909AB /* FirstHomeworkOtusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */; };
-		2AE5934329B4D135009909AB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934229B4D135009909AB /* MainTabView.swift */; };
+		2AE5934329B4D135009909AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934229B4D135009909AB /* ContentView.swift */; };
 		2AE5934529B4D137009909AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5934429B4D137009909AB /* Assets.xcassets */; };
 		2AE5934829B4D137009909AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE5934729B4D137009909AB /* Preview Assets.xcassets */; };
 		2AE5934F29B4ECAD009909AB /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5934E29B4ECAD009909AB /* SecondScreen.swift */; };
@@ -18,10 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		2A227A0B29C322DA0073D36B /* Networking */ = {isa = PBXFileReference; lastKnownFileType = text; name = Networking; path = Modules/Networking; sourceTree = SOURCE_ROOT; };
+		2A227A0F29C349E60073D36B /* generate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
+		2A227A1129C34BB40073D36B /* newsapi.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = newsapi.yml; sourceTree = "<group>"; };
+		2A227A1429C35C280073D36B /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		2A87AFDA29B618B2005CE433 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		2AC4606229C8753800112DFA /* UIDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIDesignSystem; sourceTree = "<group>"; };
+		2AC4606629C875F100112DFA /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		2AE5933D29B4D135009909AB /* FirstHomeworkOtus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstHomeworkOtus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHomeworkOtusApp.swift; sourceTree = "<group>"; };
-		2AE5934229B4D135009909AB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2AE5934229B4D135009909AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AE5934429B4D137009909AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE5934729B4D137009909AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AE5934E29B4ECAD009909AB /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
@@ -34,18 +46,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC4605E29C38BB500112DFA /* Networking in Frameworks */,
+				2AC4606429C8754400112DFA /* UIDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A87AFD929B61892005CE433 /* 3_ThirdScreen */ = {
+		2A227A0C29C323230073D36B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A87AFDA29B618B2005CE433 /* ThirdScreen.swift */,
 			);
-			path = 3_ThirdScreen;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A227A1329C35BA50073D36B /* 4_News */ = {
+			isa = PBXGroup;
+			children = (
+				2A227A1429C35C280073D36B /* NewsModel.swift */,
+			);
+			path = 4_News;
+			sourceTree = "<group>";
+		};
+		2A87AFD929B61892005CE433 /* 3_Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2A87AFDA29B618B2005CE433 /* ProfileScreen.swift */,
+			);
+			path = 3_Profile;
+			sourceTree = "<group>";
+		};
+		2AC4606529C8759C00112DFA /* 5_Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2AC4606629C875F100112DFA /* DashboardScreen.swift */,
+			);
+			path = 5_Dashboard;
 			sourceTree = "<group>";
 		};
 		2AE5933429B4D135009909AB = {
@@ -53,6 +90,7 @@
 			children = (
 				2AE5933F29B4D135009909AB /* FirstHomeworkOtus */,
 				2AE5933E29B4D135009909AB /* Products */,
+				2A227A0C29C323230073D36B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +105,19 @@
 		2AE5933F29B4D135009909AB /* FirstHomeworkOtus */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4606229C8753800112DFA /* UIDesignSystem */,
+				2A227A0B29C322DA0073D36B /* Networking */,
 				2AE5934029B4D135009909AB /* FirstHomeworkOtusApp.swift */,
-				2AE5934229B4D135009909AB /* MainTabView.swift */,
+				2AE5934229B4D135009909AB /* ContentView.swift */,
 				2AE5935B29B61627009909AB /* 1_FirstScreen */,
-				2AE5935829B61156009909AB /* 2_SecondScreen */,
-				2A87AFD929B61892005CE433 /* 3_ThirdScreen */,
+				2AE5935829B61156009909AB /* 2_Catalog */,
+				2A87AFD929B61892005CE433 /* 3_Profile */,
+				2A227A1329C35BA50073D36B /* 4_News */,
+				2AC4606529C8759C00112DFA /* 5_Dashboard */,
 				2AE5934429B4D137009909AB /* Assets.xcassets */,
 				2AE5934629B4D137009909AB /* Preview Content */,
+				2A227A1129C34BB40073D36B /* newsapi.yml */,
+				2A227A0F29C349E60073D36B /* generate.sh */,
 			);
 			path = FirstHomeworkOtus;
 			sourceTree = "<group>";
@@ -86,13 +130,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2AE5935829B61156009909AB /* 2_SecondScreen */ = {
+		2AE5935829B61156009909AB /* 2_Catalog */ = {
 			isa = PBXGroup;
 			children = (
 				2AE5934E29B4ECAD009909AB /* SecondScreen.swift */,
 				2AE5935929B61199009909AB /* MusicScreen.swift */,
 			);
-			path = 2_SecondScreen;
+			path = 2_Catalog;
 			sourceTree = "<group>";
 		};
 		2AE5935B29B61627009909AB /* 1_FirstScreen */ = {
@@ -119,6 +163,10 @@
 			dependencies = (
 			);
 			name = FirstHomeworkOtus;
+			packageProductDependencies = (
+				2AC4605D29C38BB500112DFA /* Networking */,
+				2AC4606329C8754400112DFA /* UIDesignSystem */,
+			);
 			productName = FirstHomeworkOtus;
 			productReference = 2AE5933D29B4D135009909AB /* FirstHomeworkOtus.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +211,8 @@
 			files = (
 				2AE5934829B4D137009909AB /* Preview Assets.xcassets in Resources */,
 				2AE5934529B4D137009909AB /* Assets.xcassets in Resources */,
+				2A227A1229C34BB40073D36B /* newsapi.yml in Resources */,
+				2A227A1029C349E60073D36B /* generate.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC4606729C875F100112DFA /* DashboardScreen.swift in Sources */,
+				2A227A1529C35C280073D36B /* NewsModel.swift in Sources */,
 				2AE5934F29B4ECAD009909AB /* SecondScreen.swift in Sources */,
-				2A87AFDB29B618B2005CE433 /* ThirdScreen.swift in Sources */,
-				2AE5934329B4D135009909AB /* MainTabView.swift in Sources */,
+				2A87AFDB29B618B2005CE433 /* ProfileScreen.swift in Sources */,
+				2AE5934329B4D135009909AB /* ContentView.swift in Sources */,
 				2AE5934129B4D135009909AB /* FirstHomeworkOtusApp.swift in Sources */,
 				2AE5935A29B61199009909AB /* MusicScreen.swift in Sources */,
 				2AE5935729B5BCBD009909AB /* FirstScreen.swift in Sources */,
@@ -379,6 +431,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AC4605D29C38BB500112DFA /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		2AC4606329C8754400112DFA /* UIDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2AE5933529B4D135009909AB /* Project object */;
 }

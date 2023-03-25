@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThirdScreen: View {
+struct ProfileScreen: View {
     
   @State var isModal: Bool = false
   @State private var tab: Tab = .third
@@ -33,6 +33,6 @@ struct ThirdScreen: View {
 
 struct ThirdScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ThirdScreen()
+        ProfileScreen()
     }
 }

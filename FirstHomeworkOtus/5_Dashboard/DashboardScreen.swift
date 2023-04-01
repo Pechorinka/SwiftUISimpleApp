@@ -9,12 +9,36 @@ import SwiftUI
 import UIDesignSystem
 
 struct DashboardScreen: View {
+    
+    @ObservedObject var model = ViewModel()
+    
     var body: some View {
         NavigationStackView(transition: .custom(AnyTransition.moveAndFade))
-                                                {
+            {
             FirstView()
-        }
+            }.onAppear {
+                model.setupConfig()
+                model.call()
+            }
 
+    }
+}
+
+class ViewModel: ObservableObject {
+    @Injected var analytics: Analytics?
+    @Injected var dataStorage: DataStorage?
+    @Injected var networkClient: NetworkClient?
+    @Injected var parsing: Parsing?
+    
+    func call() {
+        analytics?.performAnalytics()
+        dataStorage?.performDataStorage()
+        networkClient?.performNetworking()
+        parsing?.performParsing()
+    }
+    
+    func setupConfig() {
+        ConfigApp.shared.registerAll()
     }
 }
 
